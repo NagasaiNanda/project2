@@ -1,11 +1,11 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
-    --secondary: #34AD54;
+    --primary: #fff;
+    --secondary: #F8F4E3;
     --light: #EEF9FF;
-    --dark: #091E3E;
+    --dark: #E0C878;
 }
-
+body {background: #0B472A }
 
 /*** Spinner ***/
 .spinner {
@@ -129,16 +129,18 @@ h6,
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
-    color: #FFFFFF;
+    color: #0D88A6;
     font-size: 18px;
     font-weight: 600;
     outline: none;
     transition: .5s;
+	
 }
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--dark);
+	
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -221,7 +223,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(9, 30, 62, .7);
+    /**background: rgba(9, 30, 62, .7);**/
     z-index: 1;
 }
 
