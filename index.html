@@ -752,7 +752,12 @@
                                 <input type="text" name="subject"  class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="number" name="phone" class="form-control border-0 bg-light px-4" placeholder="Your phone number " style="height: 55px;" required >
+								<input type="tel" name="phone" lass="form-control border-0 bg-light px-4" placeholder="Your phone number " style="height: 55px;" pattern="[0-9]{10}"   maxlength="10"
+       title="Enter 10 digits only"
+       required 
+       oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+
+                                <input type="number" name="phone"  required >
                             </div>
                             
                             <div class="col-12">
